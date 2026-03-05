@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheStreetBarberShop · Chisinau</title>
+    <meta
+      name="description"
+      content="Tunsori urbane, fade-uri precise si vibe de strada. TheStreetBarberShop, STR. ALBA IULIA 184/4, Chisinau."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Montserrat:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div class="noise"></div>
+
+    <div class="page">
+      <nav class="nav">
+        <a href="#top" class="nav__logo">
+          <span class="nav__brand">TheStreetBarberShop</span>
+        </a>
+
+        <button class="nav__toggle" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+
+        <ul class="nav__links">
+          <li><a href="#about" data-i18n="nav_about">Despre</a></li>
+          <li><a href="#services" data-i18n="nav_services">Servicii</a></li>
+          <li><a href="#booking" class="nav__book" data-i18n="nav_booking">Programari</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          <li class="nav__lang nav__lang--mobile" aria-label="Schimba limba">
+            <button type="button" class="nav__lang-btn nav__lang-btn--active" data-lang="ro">RO</button>
+            <button type="button" class="nav__lang-btn" data-lang="ru">RU</button>
+          </li>
+        </ul>
+
+        <div class="nav__lang" aria-label="Schimba limba">
+          <button type="button" class="nav__lang-btn nav__lang-btn--active" data-lang="ro">RO</button>
+          <button type="button" class="nav__lang-btn" data-lang="ru">RU</button>
+        </div>
+      </nav>
+
+      <header class="header" id="top">
+        <section class="hero">
+          <div class="hero__content">
+            <p class="hero__kicker" data-i18n="hero_kicker">Tunsori fresh. Energie de strada.</p>
+            <h1 class="hero__title">TheStreet<br /><span>BarberShop</span></h1>
+            <p class="hero__subtitle" data-i18n="hero_subtitle">
+              Tunsori urbane, contururi precise si vibe de cartier. Intri relaxat, iesi legendar.
+            </p>
+            <div class="hero__actions">
+              <a href="#booking" class="btn btn--primary" data-i18n="hero_cta_primary">Programeaza-te online</a>
+              <a href="#services" class="btn btn--ghost" data-i18n="hero_cta_secondary">Vezi serviciile</a>
+            </div>
+            <div class="hero__meta">
+              <div class="hero__meta-item">
+                <span class="hero__meta-label" data-i18n="hero_hours_label">Program</span>
+                <span class="hero__meta-value" data-i18n="hero_hours_value">Lun-Dum · 09:00 - 19:30</span>
+              </div>
+              <div class="hero__meta-divider"></div>
+              <div class="hero__meta-item">
+                <span class="hero__meta-label" data-i18n="hero_location_label">Locatie</span>
+                <span class="hero__meta-value">STR. ALBA IULIA 184/4</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__card">
+              <div class="hero__photo"></div>
+            </div>
+          </div>
+        </section>
+
+        <a href="#booking" class="hero__scroll">
+          <span data-i18n="hero_scroll">Deruleaza pentru programare</span>
+          <div class="hero__scroll-icon"></div>
+        </a>
+      </header>
+
+      <main>
+        <section class="section section--about" id="about">
+          <div class="section__inner section__inner--split">
+            <div>
+              <div class="section__tag" data-i18n="about_tag">Despre barber shop</div>
+              <h2 class="section__title" data-i18n="about_title">Cultura de strada se intalneste cu barbering clasic.</h2>
+              <p class="section__text" data-i18n="about_p1">
+                La <strong>TheStreetBarberShop</strong> combinam mestesugul vechi cu energia noua. Fade-uri precise,
+                barbierit cu brici si stiluri care arata bine si la birou, si pe strada.
+              </p>
+              <p class="section__text" data-i18n="about_p2">
+                Pereti plini de graffiti, hip-hop in boxe si scaune pregatite de povesti. Fara graba, fara presiune.
+              </p>
+            </div>
+
+            <div class="about__grid">
+              <article class="about__stat">
+                <span class="about__stat-number">10+</span>
+                <span class="about__stat-label">Ani experienta</span>
+              </article>
+              <article class="about__stat">
+                <span class="about__stat-number">4.9</span>
+                <span class="about__stat-label">Rating mediu</span>
+              </article>
+              <article class="about__stat about__stat--wide">
+                <span class="about__stat-number">1,800+</span>
+                <span class="about__stat-label">Programari finalizate</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="services">
+          <div class="section__inner">
+            <div class="section__header">
+              <div class="section__tag" data-i18n="services_tag">Servicii</div>
+              <h2 class="section__title" data-i18n="services_title">Tunsori pe ritmul tau.</h2>
+              <p class="section__text section__text--muted" data-i18n="services_subtitle">
+                De la skin fade la tunsori clasice, pastram totul simplu, clar si transparent.
+              </p>
+            </div>
+
+            <div class="services">
+              <article class="service-card">
+                <div class="service-card__header">
+                  <h3 data-i18n="service1_title">Street Fade</h3>
+                  <span class="service-card__price">250 lei</span>
+                </div>
+                <p class="service-card__desc" data-i18n="service1_desc">
+                  Fade curat, contur precis, styling la final. Perfect pentru un look proaspat.
+                </p>
+                <ul class="service-card__list">
+                  <li data-i18n="service1_item1">Masina + foarfeca</li>
+                  <li data-i18n="service1_item2">Contur & styling</li>
+                  <li data-i18n="service1_item3">15-30 min</li>
+                </ul>
+                <a href="#booking" class="service-card__cta" data-i18n="service_book">Programeaza</a>
+              </article>
+
+              <article class="service-card">
+                <div class="service-card__header">
+                  <h3 data-i18n="service2_title">Beard Game</h3>
+                  <span class="service-card__price">100 lei</span>
+                </div>
+                <p class="service-card__desc" data-i18n="service2_desc">
+                  Definim, conturam si aranjam barba cu precizie de brici.
+                </p>
+                <ul class="service-card__list">
+                  <li data-i18n="service2_item1">Prosop fierbinte</li>
+                  <li data-i18n="service2_item2">Detalii la brici</li>
+                  <li data-i18n="service2_item3">15-20 min</li>
+                </ul>
+                <a href="#booking" class="service-card__cta" data-i18n="service_book">Programeaza</a>
+              </article>
+
+              <article class="service-card service-card--accent">
+                <div class="service-card__header">
+                  <h3 data-i18n="service3_title">Full Street Package</h3>
+                  <span class="service-card__price">300 lei</span>
+                </div>
+                <p class="service-card__desc" data-i18n="service3_desc">
+                  Tuns + barba + styling. Pleci gata de poze.
+                </p>
+                <ul class="service-card__list">
+                  <li data-i18n="service3_item1">Consultatie inclusa</li>
+                  <li data-i18n="service3_item2">Produs de finisare</li>
+                  <li data-i18n="service3_item3">30-45 min</li>
+                </ul>
+                <a href="#booking" class="service-card__cta service-card__cta--accent" data-i18n="service3_cta">Programeaza pachetul</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--booking" id="booking">
+          <div class="section__inner section__inner--split section__inner--align-top">
+            <div>
+              <div class="section__tag" data-i18n="booking_tag">Programari online</div>
+              <h2 class="section__title" data-i18n="booking_title">Rezerva-ti locul in scaun.</h2>
+              <p class="section__text" data-i18n="booking_text">
+                Alege data, ora si serviciul, iar noi iti pastram locul. Fara mesaje in plus, fara asteptat.
+              </p>
+              <ul class="booking__info">
+                <li data-i18n="booking_bullet2">Calendar cu zile si ore disponibile</li>
+                <li data-i18n="booking_bullet3">Poti selecta si barberul preferat</li>
+              </ul>
+              <div class="booking__barbers">
+                <div class="barber-chip"><span class="barber-chip__dot"></span> Daniel</div>
+                <div class="barber-chip"><span class="barber-chip__dot"></span> David</div>
+                <div class="barber-chip"><span class="barber-chip__dot"></span> Mihai</div>
+              </div>
+            </div>
+
+            <div class="booking">
+              <form class="booking__form" id="bookingForm">
+                <div class="booking__row">
+                  <label>
+                    <span data-i18n="booking_name_label">Nume</span>
+                    <input type="text" name="name" required placeholder="Numele tau" data-i18n-placeholder="booking_name_placeholder" />
+                  </label>
+                  <label>
+                    <span data-i18n="booking_phone_label">Telefon</span>
+                    <input type="tel" name="phone" required placeholder="+373 ..." data-i18n-placeholder="booking_phone_placeholder" />
+                  </label>
+                </div>
+
+                <label>
+                  <span data-i18n="booking_email_label">Email</span>
+                  <input type="email" name="email" required placeholder="email@exemplu.com" data-i18n-placeholder="booking_email_placeholder" />
+                </label>
+
+                <div class="booking__row">
+                  <label>
+                    <span data-i18n="booking_service_label">Serviciu</span>
+                    <select name="service" required>
+                      <option value="" data-i18n-option="booking_service_placeholder">Alege serviciul</option>
+                      <option data-i18n-option="booking_service1">Street Fade</option>
+                      <option data-i18n-option="booking_service2">Beard Game</option>
+                      <option data-i18n-option="booking_service3">Full Street Package</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span data-i18n="booking_barber_label">Barber</span>
+                    <select name="barber">
+                      <option value="" data-i18n-option="booking_barber_any">Orice barber</option>
+                      <option>Daniel</option>
+                      <option>David</option>
+                      <option>Mihai</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="booking__row booking__row--calendar">
+                  <div class="booking__calendar">
+                    <div class="booking__calendar-header">
+                      <button type="button" class="booking__calendar-nav" id="prevMonth" aria-label="Previous month">‹</button>
+                      <div class="booking__calendar-month" id="calendarMonth">Martie 2026</div>
+                      <button type="button" class="booking__calendar-nav" id="nextMonth" aria-label="Next month">›</button>
+                    </div>
+                    <div class="booking__calendar-grid" id="calendarGrid"></div>
+                  </div>
+                  <div class="booking__time">
+                    <label>
+                      <span data-i18n="booking_time_label">Ora</span>
+                      <select name="time" id="timeSelect" required>
+                        <option value="" data-i18n-option="booking_time_placeholder">Alege ora</option>
+                      </select>
+                    </label>
+                    <p class="booking__hint" data-i18n="booking_hint">
+                      Alege o data din calendar pentru a vedea orele disponibile.
+                    </p>
+                    <input type="hidden" name="date" id="selectedDate" required />
+                  </div>
+                </div>
+
+                <label class="booking__note">
+                  <span data-i18n="booking_notes_label">Note (optional)</span>
+                  <textarea
+                    name="notes"
+                    rows="2"
+                    placeholder="Nivelul fade-ului, stilul de barba, orice e important."
+                    data-i18n-placeholder="booking_notes_placeholder"
+                  ></textarea>
+                </label>
+
+                <button type="submit" class="btn btn--primary btn--full btn--submit" id="bookingSubmit">
+                  <span class="btn__text" data-i18n="booking_submit">Confirma programarea</span>
+                  <span class="btn__loading" hidden>Se trimite...</span>
+                </button>
+                <p class="booking__status" id="bookingStatus" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="contact">
+          <div class="section__inner section__inner--split section__inner--align-top">
+            <div>
+              <div class="section__tag" data-i18n="contact_tag">Contact & locatie</div>
+              <h2 class="section__title" data-i18n="contact_title">Vino la noi sau scrie-ne.</h2>
+              <p class="section__text section__text--muted" data-i18n="contact_text">
+                Suntem in Chisinau, STR. ALBA IULIA 184/4.
+              </p>
+              <div class="contact__grid">
+                <div>
+                  <h3 class="contact__label" data-i18n="contact_address_label">Adresa</h3>
+                  <p class="contact__value">Moldova, Chisinau<br />STR. ALBA IULIA 184/4</p>
+                </div>
+                <div>
+                  <h3 class="contact__label" data-i18n="contact_phone_label">Telefon</h3>
+                  <p class="contact__value"><a href="tel:068550427">068 550 427</a></p>
+                </div>
+                <div>
+                  <h3 class="contact__label" data-i18n="contact_email_label">Email</h3>
+                  <p class="contact__value"><a href="mailto:thestreetbarbershop@gmail.com">thestreetbarbershop@gmail.com</a></p>
+                </div>
+                <div>
+                  <h3 class="contact__label">Instagram</h3>
+                  <p class="contact__value">
+                    <a href="https://www.instagram.com/thestreettbarbershopp" target="_blank" rel="noopener noreferrer">@thestreettbarbershopp</a>
+                  </p>
+                </div>
+                <div>
+                  <h3 class="contact__label" data-i18n="contact_hours_label">Program</h3>
+                  <p class="contact__value" data-i18n="contact_hours_value">Luni - Duminica: 09:00 - 19:30</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-card">
+              <div class="map-card__tag" data-i18n="map_tag">Harta</div>
+              <div class="map-card__body">
+                <iframe
+                  title="TheStreetBarberShop - Locatie"
+                  src="https://www.google.com/maps?q=STR.ALBA+IULIA+184/4,+Chisinau,+Moldova&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="map-card__note">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=STR.ALBA+IULIA+184/4,+Chisinau,+Moldova"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="map_note"
+                >
+                  Deschide in Google Maps →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <span class="footer__logo">TheStreetBarberShop</span>
+            <span class="footer__tagline" data-i18n="footer_tagline">Ramai fresh. Ramai street.</span>
+          </div>
+          <div class="footer__right">
+            <a href="#top" class="footer__top" data-i18n="footer_top">Inapoi sus ↑</a>
+            <span class="footer__copy">© <span id="year"></span> TheStreetBarberShop.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
